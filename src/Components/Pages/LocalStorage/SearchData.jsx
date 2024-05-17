@@ -37,7 +37,8 @@ const SearchData = () => {
                                     <div className="card-actions justify-end">
                                         <p>Role:{item?.role}</p>
                                     </div>
-                                    <div>Skills : {item?.skills?.map((skill, i) => {
+                                    <div className="grid grid-cols-4">
+                                       <p> Skills :</p> <br /> {item?.skills?.map((skill, i) => {
                                         return (
                                             <div key={i}>{i + 1}.{skill.skill}</div>
                                         )
@@ -48,7 +49,7 @@ const SearchData = () => {
                     })
                 }
             </div>
-            {filterData?.length === 0 && <h2 style={{ fontSize: "28px", color: "white", textAlign: "center", marginBottom: "20%", color: "cyan" }}> Sorry!! No data found !!</h2>}
+            {filterData?.length === 0 && <h2 style={{ fontSize: "28px",  textAlign: "center", marginBottom: "20%", color: "cyan" }}> Sorry!! No data found !!</h2>}
         </>
     )
 }

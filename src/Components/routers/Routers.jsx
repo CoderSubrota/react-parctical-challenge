@@ -62,7 +62,7 @@ const routers = createBrowserRouter([
       },      {
          path:"*",
          element:<div>
-            <h2 style={{ fontSize: "28px", color: "white", textAlign: "center", margin: "16% 0px", color: "lime" }}> Sorry!! no route found here!!</h2>
+            <h2 style={{ fontSize: "28px", textAlign: "center", margin: "16% 0px", color: "lime" }}> Sorry!! no route found here!!</h2>
          </div>
       },
 

@@ -32,6 +32,7 @@ let checkEmail=false;
             if(item.email===email){
                 return checkEmail = true ; //function return something
             }
+            return 0;
         });
         //
 
@@ -53,9 +54,8 @@ let checkEmail=false;
     }
 
     return (<>
-        <div>
 
-            <div>
+            <div className="my-12">
                 { <p id="msg" style={{color:"white",textAlign:"center",fontSize:"25px"}}>  </p> }
                 <div className="hero">
                     <div className="hero-content flex-col lg:flex-row-reverse">
@@ -107,7 +107,7 @@ let checkEmail=false;
                                 <button onClick={() => addSkills()} type="submit" className="btn btn-info text-white  mx-5">Add skill</button>
                             </div>
                             <div className="my-3">
-                            <div class="grid grid-rows-4 grid-flow-col gap-4"  id="skillsShow">
+                            <div class="grid grid-cols-3 gap-4"  id="skillsShow">
                                 {
                                     skills.map((item, i) => {
                                         return (
@@ -127,8 +127,6 @@ let checkEmail=false;
                     </div>
                 </div>
             </div>
-
-        </div>
     </>)
 }
 
