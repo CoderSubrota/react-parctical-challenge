@@ -1,0 +1,52 @@
+#soppingProgress{
+    background-color: #dddddd70;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 50px auto;
+    width: 100%;
+    transform: scale(0.9);
+    text-align: center;
+    top: -85px;
+    position: relative;
+
+}
+
+
+#progressBar{
+    background-color: #04cc1567;
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    transition: width 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.progressPointers {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 295px;
+    transform: scale(0.9);
+    margin-top: 120px;
+}
+
+#progressPointer {
+    height: 50px;
+    width: 50px;
+    background-color: cyan;
+    border-radius: 50%;
+    color: rgb(3, 1, 1);
+    text-align: center;
+    line-height: 45px;
+    font-size: 21px;
+    overflow: hidden;
+}
+
+
+
+#doneImg {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
