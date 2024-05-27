@@ -43,6 +43,9 @@ const SearchData = () => {
                                             <div key={i}>{i + 1}.{skill.skill}</div>
                                         )
                                     })}</div>
+                                       <NavLink to={`/user/${item.email}`}> 
+                                        <button className="btn btn-info text-white m-4" >Show details</button>
+                                      </NavLink>
                                 </div>
                             </div>
                         )

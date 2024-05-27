@@ -11,6 +11,7 @@ import SearchProducts from "../Pages/Pagination/SearchPage";
 import Candidates from "../Pages/LocalStorage/Candidates";
 import SearchData from "../Pages/LocalStorage/SearchData";
 import JobSeekers from "../Pages/LocalStorage/JobSeekers";
+import User from "../Pages/LocalStorage/User";
 
 const routers = createBrowserRouter([
 {
@@ -65,10 +66,14 @@ const routers = createBrowserRouter([
             <h2 style={{ fontSize: "28px", textAlign: "center", margin: "16% 0px", color: "lime" }}> Sorry!! no route found here!!</h2>
          </div>
       },
+      {
+         path:`/user/:email`,
+         element:<User></User>
+      }
 
         ]
    
-}
+} 
 ]);
 
 export default routers;

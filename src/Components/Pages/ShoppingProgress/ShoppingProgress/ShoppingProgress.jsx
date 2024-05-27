@@ -53,9 +53,9 @@ const ShoppingProgressBar = () => {
                     progress === 100 && <DoneShopping></DoneShopping>
                 }
                 <div style={{ display: "flex", justifyContent: "center" }}>
-                    <button className='btn btn-info text-white' style={{ display: progress === 75 || progress === 100 ? "none" : "block" }} onClick={() => handleProgress(25)}>Next</button>
-                    <button className='btn btn-info text-white' style={{ display: progress === 75 ? "block" : "none" }} onClick={() => handleProgress(25)}>Submit</button>
-                    <button className='btn btn-info text-white' style={{ display: progress === 100 ? "block" : "none" }} disabled={progress === 100} onClick={() => handleProgress(100)}>Submited</button>
+                    <button className='btn btn-info text-white my-3' style={{ display: progress === 75 || progress === 100 ? "none" : "block" }} onClick={() => handleProgress(25)}>Next</button>
+                    <button className='btn btn-info text-white  my-3' style={{ display: progress === 75 ? "block" : "none" }} onClick={() => handleProgress(25)}>Submit</button>
+                    <button className='btn btn-info text-white  my-3' style={{ display: progress === 100 ? "block" : "none" }} disabled={progress === 100} onClick={() => handleProgress(100)}>Submited</button>
 
                 </div>
             </div>
