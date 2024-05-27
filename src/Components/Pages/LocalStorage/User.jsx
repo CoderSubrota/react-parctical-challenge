@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 
 const User = () => {
 const {email} = useParams() ;
@@ -13,7 +13,7 @@ setUser(candiadate) ;
     return (
 
         <>
-            <div className="card card-compact w-96 m-10 bg-base-100 shadow-xl" key={user.name}>
+            <div className="card card-compact w-96 m-10 bg-base-100 mx-auto shadow-xl" key={user.name}>
                 <figure><img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
                 <div className="card-body" >
                     <h2 className="card-title">Name: {user.name}</h2>
@@ -27,6 +27,9 @@ setUser(candiadate) ;
                         </>)
                     })}</p>
                 </div>
+                <NavLink to="/all-users">
+                    <button className="btn btn-primary m-6 w-md">Back</button>
+                </NavLink>
             </div>
         </>
     )
